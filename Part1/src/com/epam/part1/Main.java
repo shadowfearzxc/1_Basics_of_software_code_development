@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 // unit1 Introduction to Java EPAM
 // 1_Basics_of_software_code_development
+// The all revisions you can view in revisions.txt
 // Part 1 - Lines programs(tasks 1-6)
 // Part 2 - Branching(task 7 - 11)
 // Part 3 - Cycle(task 12 - 19)
 // starting coding 13.07.2022 (5:19 PM)
-// Ending coding 14.07.2022 (1:03 AM)
+// Ending coding 00.07.2022 (00:00)
 public class Main {
 
     public static void main(String[] args) {

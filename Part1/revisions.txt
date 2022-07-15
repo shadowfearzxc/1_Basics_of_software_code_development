@@ -1,0 +1,8 @@
+> Unit1 EPAM Introduction_to_Java revisions file
+>1_Basics_of_software_code_development
+> [*] - Fixed/Changed/Updated, [+] - Added, [-] Removed.
+
+--13.07.2022 6:21 PM  (version v1.0.0) --
+
+[+] Added public static void allTasks()
+	separate func that stores the execute all tasks
