@@ -9,7 +9,7 @@ import java.util.Scanner;
 // Part 2 - Branching(task 7 - 11)
 // Part 3 - Cycle(task 12 - 19)
 // starting coding 13.07.2022 (5:19 PM)
-// Ending coding 00.07.2022 (00:00)
+// Ending coding 19.07.2022 (11:08 PM)
 public class Main {
 
     public static void main(String[] args) {
@@ -46,26 +46,26 @@ public class Main {
         int b = 6;
         int c = 1;
         int z = ((a - 3) * b / 2) + c;
-        System.out.println("Answer(1) : " + z);
+        System.out.println("Значение функции : " + z);
     }
 
     private static void task02() {
-        System.out.println("\nВычислить значение выражения по формуле" +
+        System.out.println("\nВычислить значение выражения по формуле (b+sqrt(b^2 + 4ac)/2a) - a^3 + b^-2" +
                 " (все переменные принимают действительные значения)");
         int b = 5;
         int a = 4;
         int c = 1;
-        double f = ((b + (Math.sqrt(((b * b) - (4 * a * c))))) / (2 * a)) - (Math.pow(a, 3) * c) + (Math.pow(5, -2));
-        System.out.println("Answer(2) : " + f);
+        double f = (b + Math.sqrt(b*b + 4 * a * c)) / (2 * a) - Math.pow(a, 3) * c + Math.pow(b, -2);
+        System.out.println("Значение выражения : " + f);
     }
 
     private static void task03() {
-        System.out.println("\nВычислить значение выражения по формуле " +
+        System.out.println("\nВычислить значение выражения по формуле (sinx + cosx)/(cosx - siny)  * tgxy" +
                 "(все переменные принимают действительные значения)");
         int x = 90;
         int y = 60;
         double f = (((Math.sin(x)) + (Math.cos(y))) / ((Math.cos(x)) - (Math.sin(y)))) * (Math.tan(x) * Math.tan(y));
-        System.out.println("Answer(3) : " + f);
+        System.out.println("Значение выражения : " + f);
     }
 
     private static void task04() {
@@ -74,7 +74,7 @@ public class Main {
                 "дробную и целую части числа и вывести полученное значение числа");
         double x = 123.456;
         double f = (x * 1000) % 1000 + (int) x / 1000.0;
-        System.out.println("Answer(4) : " + f);
+        System.out.println("Ответ : " + f);
     }
 
     private static void task05() {
@@ -86,7 +86,7 @@ public class Main {
         int temp = T - (hours * 3600);
         int minutes = temp / 60;
         int seconds = temp - (minutes * 60);
-        System.out.println("Answer(5) : " + hours + "ч " + minutes + "мин " + seconds + "c");
+        System.out.println("Ответ : " + hours + "ч " + minutes + "мин " + seconds + "c");
     }
 
     private static void task06() {
@@ -94,18 +94,16 @@ public class Main {
                 "которая печатает true, если точка с координатами (х, у) " +
                 "принадлежит закрашенной области, и false — в противном случае");
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите переменную x : ");
-        int x = scanner.nextInt();
-        System.out.print("Введите переменную y : ");
-        int y = scanner.nextInt();
+        System.out.print("Введите переменную x : "); int x = scanner.nextInt();
+        System.out.print("Введите переменную y : "); int y = scanner.nextInt();
         if (y + Math.abs(x) <= 4 && y >= 0) {
-            System.out.print("Answer(6) --- True: ");
+            System.out.print("True : ");
         } else if ((y >= 0 && y <= 4 && x >= -2 && x <= 2) || (y >= -3 && y <= 0 && x >= -4 && x <= 4)) {
-            System.out.print("Answer(6) --- True: ");
+            System.out.print("True : ");
         } else if (((x * x + y * y <= 16) && y >= 0 && x >= 0) || ((x * x + y * y <= 25) && y <= 0 && x >= 0)) {
-            System.out.print("Answer(6) --- True: ");
+            System.out.print("True : ");
         } else {
-            System.out.print("Answer(6) --- False");
+            System.out.print("False");
         }
         System.out.println();
     }
@@ -120,12 +118,12 @@ public class Main {
         System.out.print("Введите угол b : "); int b = scanner.nextInt();
         int c = 180 - a - b;
         if (a > 0 && b > 0 && c > 0) {
-            System.out.println("Да, треугольник существует.");
+            System.out.println("True");
             if (a == 90 || b == 90 || c == 90) {
-                System.out.println("Да треугольник прямоугольный");
+                System.out.println("Да, треугольник прямоугольный");
             }
         } else {
-            System.out.println("Треугольника не существует");
+            System.out.println("False");
         }
     }
 
@@ -151,8 +149,8 @@ public class Main {
         System.out.print("Введите координату x3 : "); int x3 = scanner.nextInt();
         System.out.print("Введите координату y3 : "); int y3 = scanner.nextInt();
         if ((x3 - x1) / (x2 - x1) == (y3 - y1) / (y2 - y1)) {
-            System.out.println("Точки лежат на одной плоскости.");
-        } else System.out.print("Точки не лежат на одной плоскости.");
+            System.out.println("Тrue");
+        } else System.out.print("False");
     }
 
     private static void task10() {
@@ -167,9 +165,9 @@ public class Main {
         if (x <= a && y <= b || y <= a && x <= b ||
                 x <= a && z <= b || z <= a && x <= b ||
                 z <= a && y <= b || y <= a && z <= b) {
-            System.out.println("Проходит");
+            System.out.println("True");
         } else {
-            System.out.print("Не проходит");
+            System.out.print("False");
         }
     }
 
@@ -206,10 +204,8 @@ public class Main {
         System.out.print("Введите x : "); int x = scanner.nextInt();
         int  y;
         for (double i = a; i <= b; i = i + h) {
-            if (x > 2) {
-                y = x;
-            } else
-                y = -x;
+            if (x > 2) { y = x; }
+            else y = -x;
             System.out.println("x = "+ x + "\n" + "y = " + y);
         }
     }
@@ -237,15 +233,14 @@ public class Main {
         System.out.print("Введите e : "); double e =  scanner.nextDouble();
         int n = 0;
         double sum = 0;
-        System.out.println("Print a series of common member series: ");
+        System.out.println("Cумма членов ряда : ");
         for (int i = 0; i<=10; i++){
             ++n;
             System.out.print("\n");
             double a =  (1/Math.pow(2,n))+ (1/Math.pow(3,n));
             System.out.printf("%.4f", a);
-            if (e <= Math.abs(a))
-                sum = sum+a;
-            System.out.printf(" sum is %f", sum);
+            if (e <= Math.abs(a))  sum = sum+a;
+            System.out.printf(" Сумма %f", sum);
     }
  }
 
@@ -264,7 +259,7 @@ public class Main {
         System.out.print("Введите число m : "); int m = scanner.nextInt();
         System.out.print("Введите число n : "); int n = scanner.nextInt();
         for (int i = m; i <= n; i++) {
-            System.out.print("\nЧисло " + i + " делится на - ");
+            System.out.print("\nЧисло " + i + " делится на : ");
             for (int j = 2; j <= i; j++) {
                 if (i % j == 0 && i != j) {
                     System.out.print(" " + j);
@@ -278,7 +273,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите число a : "); String a = scanner.nextLine();
         System.out.print("Введите число b : "); String b = scanner.nextLine();
-
         for (int f = 0; f < a.length(); f++) {
             a.charAt(f);
         }
