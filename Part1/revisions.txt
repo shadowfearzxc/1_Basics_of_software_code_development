@@ -2,7 +2,23 @@
 > 1_Basics_of_software_code_development
 > [*] - Fixed/Changed/Updated, [+] - Added, [-] Removed.
 
---13.07.2022 6:21 PM  (version v1.0.0) --
+--00.00.0000 00:00 PM (version v1.0.0) -- // template
+
+
+
+-- 19.07.2022 10.47 PM (version v1.0.1)
+
+[+] Added task condition 
+
+[*]  code reduction
+from : 350 strings
+to : 288 strings
+
+[*] 
+task02() :
+	double f -> formula changed
+
+-- 13.07.2022 6:21 PM  (version v1.0.0) --
 
 [+] Added public static void allTasks()
 	separate func that stores the execute all tasks
