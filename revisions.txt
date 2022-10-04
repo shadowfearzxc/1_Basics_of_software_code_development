@@ -4,7 +4,7 @@
 
 --04.10.2022 4:03 PM (final release)
     [*]Fixed all tasks
-    [-]Removed conditions from all tasks. All conditions are attached in the folder
+    [-]Removed conditions from all tasks. All conditions are attached in the file
        > Practice (tasks).pdf
     [*]unit1 finished
     string : 249
