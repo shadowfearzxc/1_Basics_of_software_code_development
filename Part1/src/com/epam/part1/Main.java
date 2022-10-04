@@ -11,7 +11,7 @@ import java.util.Scanner;
  Part 3 - Cycle(task 12 - 19)
  starting coding 13.07.2022 (5:19 PM)
  Ending coding 19.07.2022 (11:08 PM)
- Final release unit1 04.10.2022 (   PM)
+ Final release unit1 04.10.2022 (4:03 PM)
  */
 
 public class Main {
