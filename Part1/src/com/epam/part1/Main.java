@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  unit1 Introduction to Java EPAM
  1_Basics_of_software_code_development
- The all revisions you can view in revisions.txt
+ The all changes you can view in revisions.txt
  Part 1 - Lines programs(tasks 1-6)
  Part 2 - Branching(task 7 - 11)
  Part 3 - Cycle(task 12 - 19)
